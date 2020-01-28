@@ -1,0 +1,68 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add firebase
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Lenovo admin\bin;C:\Users\Lenovo admin\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Lenovo admin\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Lenovo admin\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Lenovo admin\AppData\Local\Programs\Python\Python37;C:\Python27;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files (x86)\Skype\Phone;C:\sqlite;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Brackets\command;C:\Users\Lenovo admin\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\Dart\dart-sdk\bin;C:\Windows\System32;C:\Program Files\Git\;C:\src\flutter\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.2\bin;C:\Users\Lenovo admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\xampp\php;C:\Users\Lenovo admin\Downloads\mongodb\mongodb-win\bin;C:\Android\Sdk2\platform-tools;C:\Users\Lenovo admin\AppData\Local\Yarn\bin;C:\Users\Lenovo admin\Downloads\mongodb-shell\mongodb-win32-x86_64-2008plus-ssl-4.0.10\bin;C:\Program Files\heroku\bin;C:\Users\Lenovo admin\AppData\Roaming\npm;C:\Users\Lenovo admin\.dotnet\tools;C:\tools\dart-sdk\bin;C:\Users\Lenovo admin\AppData\Roaming\Pub\Cache\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  12.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+
+npm manifest: 
+  {
+    "name": "cotd",
+    "version": "0.0.3",
+    "private": true,
+    "devDependencies": {
+      "concurrently": "3.5.1",
+      "react-scripts": "1.1.1"
+    },
+    "dependencies": {
+      "autoprefixer-stylus": "0.14.0",
+      "firebase": "^4.10.0",
+      "prop-types": "^15.6.0",
+      "re-base": "3.2.2",
+      "react": "^16.3.0-alpha.1",
+      "react-dom": "^16.3.0-alpha.1",
+      "react-router-dom": "^4.2.2",
+      "react-transition-group": "^2.2.1",
+      "serve": "^6.5.0",
+      "stylus": "0.54.5"
+    },
+    "scripts": {
+      "dev": "react-scripts start",
+      "start": "serve --single ./build",
+      "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+      "build": "react-scripts build",
+      "eject": "react-scripts eject",
+      "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+      "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
